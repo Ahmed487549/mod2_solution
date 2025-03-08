@@ -1,0 +1,65 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.75em; /* 75% larger than dummy text */
+  }
+  
+  .container {
+    padding: 15px;
+  }
+  
+  .section {
+    position: relative;
+    background-color: #f4f4f4;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 40px 15px 15px 15px;
+  }
+  
+  .section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffcccb;
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-size: 1.25em; /* 25% larger than dummy text */
+  }
+  
+  /* Desktop View */
+  @media (min-width: 992px) {
+    .section {
+      width: 31%;
+      float: left;
+    }
+  }
+  
+  /* Tablet View */
+  @media (min-width: 768px) and (max-width: 991px) {
+    #chicken, #beef {
+      width: 48%;
+      float: left;
+    }
+    #sushi {
+      width: 100%;
+      clear: both;
+    }
+  }
+  
+  /* Mobile View */
+  @media (max-width: 767px) {
+    .section {
+      width: 100%;
+    }
+  }
